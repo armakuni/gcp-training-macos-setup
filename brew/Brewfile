@@ -1,0 +1,17 @@
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "homebrew/cask"
+
+brew "curl"
+brew "git"
+brew "gettext", link: true
+brew "wget"
+brew "git-crypt"
+brew "rbenv"
+brew "pinentry-mac"
+brew "gnupg"
+brew "python"
+
+cask "docker"
+cask "google-cloud-sdk"
