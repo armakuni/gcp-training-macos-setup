@@ -12,6 +12,7 @@ brew "rbenv"
 brew "pinentry-mac"
 brew "gnupg"
 brew "python"
+brew "hub"
 
 cask "docker"
 cask "google-cloud-sdk"
