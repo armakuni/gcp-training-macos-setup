@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+hub delete gcp-training-intro-to-cloudrun --yes
+hub delete gcp-training-customer-service --yes
+hub delete gcp-training-account-service --yes
+hub delete gcp-training-transaction-service --yes
+hub delete gcp-training-balance-service --yes
+hub delete gcp-training-cashier-service --yes
+hub delete gcp-training-microservices-infrastructure --yes
+
+rm -rf ~/ak-gcp-repositories

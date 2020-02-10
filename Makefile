@@ -12,22 +12,16 @@ install-packages:
 	"$(ROOT_DIR)/brew/bin/install"
 	"$(ROOT_DIR)/brew/bin/bundle-install"
 
-.PHONY: configure-git
-## Copy git config
-configure-git: install-packages
-	"$(ROOT_DIR)/git/bin/copy"
-	"$(ROOT_DIR)/git/bin/install-hook"
+.PHONY: create-workspace
+## Install all required repositories in your local and remote
+create-workspace:
+	"$(ROOT_DIR)/hub/fork-repositories"
 
-.PHONY: reinitialize-git-repositories
-## Configure all existing git repositories with hooks from templates
-reinitialize-git-repositories: install-packages configure-git
-	"$(ROOT_DIR)/git/bin/reinitialize-git-repositories"
-
-.PHONY: configure-vim
-## Link vim config
-configure-vim: install-packages
-	"$(ROOT_DIR)/vim/bin/link"
+.PHONY: cleanup-workspace
+## Remove all repositories from your local and remote
+cleanup-workspace:
+	"$(ROOT_DIR)/hub/remove-repositories"
 
 .PHONY: setup
 ## Install and setup all a workstation
-setup: install-packages configure-vim configure-git
+setup: install-packages create-workspace

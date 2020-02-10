@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+cd ~
+mkdir ak-gcp-repositories
+cd ak-gcp-repositories
+
+hub clone armakuni/gcp-training-intro-to-cloudrun
+cd gcp-training-intro-to-cloudrun
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-customer-service
+cd gcp-training-customer-service
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-account-service
+cd gcp-training-account-service
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-transaction-service
+cd gcp-training-transaction-service
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-balance-service
+cd gcp-training-balance-service
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-cashier-service
+cd gcp-training-cashier-service
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/gcp-training-microservices-infrastructure
+cd gcp-training-microservices-infrastructure
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/python-lab-bowling-game
+hub clone armakuni/python-lab-doorbell
+hub clone armakuni/python-lab-bdd
