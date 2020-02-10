@@ -7,5 +7,6 @@ hub delete gcp-training-transaction-service --yes
 hub delete gcp-training-balance-service --yes
 hub delete gcp-training-cashier-service --yes
 hub delete gcp-training-microservices-infrastructure --yes
+hub delete gcp-training-microservices-smoke-test --yes
 
 rm -rf ~/gcp-training-repositories
