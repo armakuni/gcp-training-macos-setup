@@ -1,14 +1,25 @@
 #!/usr/bin/env bash
 
 cd ~
-mkdir ak-gcp-repositories
-cd ak-gcp-repositories
+mkdir gcp-training-repositories
+cd gcp-training-repositories
+mkdir day-1
+mkdir day-2
+mkdir day-3
 
+cd day-1
+hub clone armakuni/python-lab-bowling-game
+hub clone armakuni/python-lab-doorbell
+hub clone armakuni/python-lab-bdd
+cd ..
+
+cd day-2
 hub clone armakuni/gcp-training-intro-to-cloudrun
 cd gcp-training-intro-to-cloudrun
 hub fork --remote-name origin
-cd ..
+cd ../..
 
+cd day-3
 hub clone armakuni/gcp-training-customer-service
 cd gcp-training-customer-service
 hub fork --remote-name origin
@@ -37,8 +48,4 @@ cd ..
 hub clone armakuni/gcp-training-microservices-infrastructure
 cd gcp-training-microservices-infrastructure
 hub fork --remote-name origin
-cd ..
-
-hub clone armakuni/python-lab-bowling-game
-hub clone armakuni/python-lab-doorbell
-hub clone armakuni/python-lab-bdd
+cd ../..

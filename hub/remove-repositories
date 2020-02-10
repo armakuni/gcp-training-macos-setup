@@ -8,4 +8,4 @@ hub delete gcp-training-balance-service --yes
 hub delete gcp-training-cashier-service --yes
 hub delete gcp-training-microservices-infrastructure --yes
 
-rm -rf ~/ak-gcp-repositories
+rm -rf ~/gcp-training-repositories

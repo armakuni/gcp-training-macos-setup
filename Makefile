@@ -24,4 +24,4 @@ cleanup-workspace:
 
 .PHONY: setup
 ## Install and setup all a workstation
-setup: install-packages create-workspace
+setup: install-packages
