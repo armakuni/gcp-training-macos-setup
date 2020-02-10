@@ -48,7 +48,7 @@ cd ..
 hub clone armakuni/gcp-training-microservices-infrastructure
 cd gcp-training-microservices-infrastructure
 hub fork --remote-name origin
-cd ../..
+cd ..
 
 hub clone armakuni/gcp-training-microservices-smoke-test
 cd gcp-training-microservices-smoke-test
