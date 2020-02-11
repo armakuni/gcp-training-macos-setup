@@ -13,6 +13,7 @@ brew "pinentry-mac"
 brew "gnupg"
 brew "python"
 brew "hub"
+brew "pipenv"
 
 cask "docker"
 cask "google-cloud-sdk"
