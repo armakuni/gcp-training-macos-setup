@@ -9,9 +9,19 @@ mkdir day-3
 
 cd day-1
 hub clone armakuni/python-lab-bowling-game
-hub clone armakuni/python-lab-doorbell
-hub clone armakuni/python-lab-bdd
+cd python-lab-bowling-game
+hub fork --remote-name origin
 cd ..
+
+hub clone armakuni/python-lab-doorbell
+cd python-lab-doorbell
+hub fork --remote-name origin
+cd ..
+
+hub clone armakuni/python-lab-bdd
+cd python-lab-bdd
+hub fork --remote-name origin
+cd ../..
 
 cd day-2
 hub clone armakuni/gcp-training-intro-to-cloudrun

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+hub delete python-lab-bowling-game --yes
+hub delete python-lab-doorbell --yes
+hub delete python-lab-bdd --yes
 hub delete gcp-training-intro-to-cloudrun --yes
 hub delete gcp-training-customer-service --yes
 hub delete gcp-training-account-service --yes
