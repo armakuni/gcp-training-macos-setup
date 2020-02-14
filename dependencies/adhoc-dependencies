@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+yes | gcloud components install alpha
+yes | gcloud components install beta

@@ -11,6 +11,7 @@ show-help:
 install-packages:
 	"$(ROOT_DIR)/brew/bin/install"
 	"$(ROOT_DIR)/brew/bin/bundle-install"
+	"$(ROOT_DIR)/dependencies/adhoc-dependencies"
 
 .PHONY: create-workspace
 ## Install all required repositories in your local and remote
